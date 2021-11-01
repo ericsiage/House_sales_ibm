@@ -544,7 +544,9 @@ Drop the columns <code>"id"</code>  and <code>"Unnamed: 0"</code> from axis 1 us
 
 
 ```python
-df.drop(["id","Unnamed: 0"], axis=1).describe(include="all")
+df.drop(['id','Unnamed: 0'], axis = 1, inplace = True)
+
+df.describe()
 ```
 
 
